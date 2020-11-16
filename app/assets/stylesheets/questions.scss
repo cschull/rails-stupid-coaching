@@ -1,0 +1,25 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.my-question {
+  box-shadow: 5px 5px 10px 5px rgba(161,161,161,0.2);
+  padding: 10px;
+  border-left: 4px solid grey;
+  margin-bottom: 10px
+}
+
+.coach-answer {
+  box-shadow: 5px 5px 10px 5px rgba(161,161,161,0.2);
+  padding: 10px;
+  border-left: 4px solid grey;
+  background-color: rgb(255,233,194);
+}
+
+#btn {
+  background-color: rgb(80,129,255);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}

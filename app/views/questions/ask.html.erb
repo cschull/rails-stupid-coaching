@@ -1,0 +1,34 @@
+<h1>This is our answer page</h1>
+
+<% if @question == "I am going to work" %>
+  <%=@question%>
+  <div class="my-question">
+    <p>&emsp; -you</p>
+  </div>
+  <div class="coach-answer">
+    <p>Great!</p>
+    <p>&emsp; -coach</p>
+  </div>
+<% elsif @question.include? "?" %>
+  <div class="my-question">
+    <%=@question%>
+    <p>&emsp; -you</p>
+  </div>
+  <div class="coach-answer">
+    <p>Silly question, get dressed and go to work!</p>
+    <p>&emsp; -coach</p>
+  </div>
+<% else %>
+  <div class="my-question">
+    <%=@question%>
+    <p>&emsp;  -you</p>
+  </div>
+  <div class="coach-answer">
+    <p>I don't care, get dressed and go to work!</p>
+    <p>&emsp; -coach</p>
+  </div>
+<% end %>
+
+<!-- we are linking back to homepage -->
+<%= link_to "Ask a new question", home_path %>
+
